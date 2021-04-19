@@ -13,3 +13,11 @@ const alex: Dentist = {
   name: "Alex",
   knownFor: ["Tooth Surgery"],
 };
+
+type PersonType = {
+  firstName: string;
+};
+
+const example: PersonType = {
+  firstName: "Dollars",
+};
