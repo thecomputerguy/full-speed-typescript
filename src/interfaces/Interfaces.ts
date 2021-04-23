@@ -51,3 +51,25 @@ var rapperName: string = "Rapper Eminem";
 
 //Works. First convert it to any and then convert it to a number
 var singles: number = <number>(<any>rapperName);
+
+interface CourseVenue {
+  //properties
+  city: string;
+  country: string;
+}
+
+interface CourseParticipant {
+  //properties
+  name: string;
+}
+
+interface CourseEvent {
+  //constructor
+  new (): CourseEvent;
+  //properties
+  currentLocation: CourseVenue;
+  //methods
+  bookVenue(venue: CourseVenue): any;
+  addDelegate(delegate: CourseParticipant): any;
+  removeDelegate(delegate: CourseParticipant): any;
+}
